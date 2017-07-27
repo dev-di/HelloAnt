@@ -12,4 +12,9 @@ public class MyMathTest {
         MyMath math = new MyMath();
         assertEquals(50, math.multi(5, 10));
     }
+    @Test
+    public void testMultiZero() {
+        MyMath math = new MyMath();
+        assertEquals(0, math.multi(5, 0));
+    }
 }
